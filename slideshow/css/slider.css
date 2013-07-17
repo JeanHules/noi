@@ -1,0 +1,130 @@
+   body {
+      -webkit-font-smoothing: antialiased;
+      font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #232525;
+      padding-top:70px;
+    }
+
+    #slides {
+      display: none
+    }
+
+    #slides .noi_slider-navigation {
+      margin-top:3px;
+    }
+
+    #slides .noi_slider-previous {
+      margin-right: 5px;
+      float: left;
+    }
+
+    #slides .noi_slider-next {
+      margin-left: 5px;
+      float: right;
+    }
+
+    .noi_slider-pagination {
+      margin: 8px auto;
+      width: 90px;
+      list-style: none;
+    }
+
+    .noi_slider-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .noi_slider-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(../img/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .noi_slider-pagination li a.active,
+    .noi_slider-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .noi_slider-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }
+
+    .navbar {
+      overflow: hidden
+    }
+    
+    #text_area{
+	    width: 85%;
+	    margin: 0 auto;
+	    margin-top: 10px
+    }
+    
+    /* Added CSS */
+    img{
+    	width: 100%;
+		position: absolute;
+		top: 0px;
+		z-index: -1;
+		}
+
+    
+ /* End noi_slider Optional */
+
+ /* noi_slider Required: These styles are required if you'd like a responsive slideshow */
+
+    #slides {
+      display: none;
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    .container {
+      margin: 40px auto
+    }
+
+    /* For tablets & smart phones */
+    @media (max-width: 767px) {
+      body {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .container {
+        width: auto
+      }
+    }
+
+    /* For smartphones */
+    @media (max-width: 480px) {
+      .container {
+        width: auto
+      }
+    }
+
+    /* For smaller displays like laptops */
+    @media (min-width: 768px) and (max-width: 979px) {
+      .container {
+        width: 724px
+      }
+    }
+
+    /* For larger displays */
+    @media (min-width: 1200px) {
+      .container {
+        width: 1170px
+      }
+    }
